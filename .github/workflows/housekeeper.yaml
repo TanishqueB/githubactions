@@ -11,6 +11,6 @@ jobs:
             - name: DATE AND TIME
               run: date
             - name: Echo Message
-              run: echo "Running  nightlycleanup
+              run: echo "Running  nightlycleanup"
             - name: Echo Success Message
               run: echo "Housekeeper workflow executed successfully!"
