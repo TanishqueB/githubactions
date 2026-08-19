@@ -1,0 +1,16 @@
+name: Housekeeper
+on:
+  schedule:
+    - cron: '0 2 * * *' # Runs every day at midnight
+  workflow_dispatch:
+
+jobs:
+    echo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: DATE AND TIME
+              run: date
+            - name: Echo Message
+              run: echo "Running  nightlycleanup
+            - name: Echo Success Message
+              run: echo "Housekeeper workflow executed successfully!"
