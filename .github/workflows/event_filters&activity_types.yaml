@@ -4,6 +4,7 @@ on:
         types: [opened,]
         branches:
             - master
+            - feature
 jobs:
     echo:
         runs-on: ubuntu-latest
