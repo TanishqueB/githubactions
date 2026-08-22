@@ -3,7 +3,7 @@ on:
     pull_request:
         types: [opened,]
         branches:
-            - main
+            - master
 jobs:
     echo:
         runs-on: ubuntu-latest
