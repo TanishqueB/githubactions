@@ -1,9 +1,10 @@
 name: Event Filters & activity types
 on:
-    pull_request:
-        types: [opened,closed, reopened]
-        branches:
-            - master
+    # pull_request:
+    #     types: [opened,closed, reopened]
+    #     branches:
+    #         - master
+    workflow_dispatch:
 jobs:
     echo:
         runs-on: ubuntu-latest
