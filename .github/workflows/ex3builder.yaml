@@ -10,7 +10,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: exercised
+        working-directory: react-app
 
     steps:
       - name: Checkout repository
