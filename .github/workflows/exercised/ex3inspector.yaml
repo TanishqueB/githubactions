@@ -1,7 +1,7 @@
 name: INspector
 
 on:
-    push:
+    #push:
     workflow_dispatch:
 jobs:
   inspect:
