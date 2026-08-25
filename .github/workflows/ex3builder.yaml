@@ -1,0 +1,32 @@
+name: Builder
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: app
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Confirm app directory
+        run: |
+          echo "Current working directory:"
+          pwd
+
+          echo "Files in app:"
+          ls -la
+
+          echo "Build folder confirmed"
